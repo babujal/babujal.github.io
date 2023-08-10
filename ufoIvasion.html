@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ufoInvasion.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="leftSide">
+        <h3>Play Instructions:</h3>
+        <p class="InstCannon"><h4>Cannon:</h4><br> A = Move left<br> D = Move right<br> W = Shoot </p>
+        <p class="InstUfo"><h4>Ufo:</h4><br> ArrowUp = Move Up<br> ArrowDown = Move Down<br> ArrowLeft = Move left<br> ArrowRight = move Right<br> SpaceBar = Shoot</p>
+    </div>
+
+    <div class="centerBody">
+        <h1>Ufo Invasion</h1>
+
+        <div class="rap1">
+            <span class="ufoHealthRap">
+                <h3>Ufo Health:</h3>
+                <span id="ufoHealth"></span>
+                <h3>Ufo Score:</h3>
+                <span id="ufoScore"></span>
+            </span>
+
+            <canvas id="gameArea" width="800" height="600"></canvas>
+
+            <span class="cannonHealthRap">
+                <h3>Cannon Health:</h3>
+                <span id="cannonHealth"></span>
+                <h3>Cannon Score:</h3>
+                <span id="cannonScore"></span>
+            </span>
+        </div>
+
+        <div>
+            <button id="restartButton">Play Another Round</button>
+        </div>
+    </div>
+
+    <div class="rightSide"></div>
+    <script src="ufoInv.js" type="module"></script>
+    <script src="updateScreen.js" type="module"></script>
+    <script src="restartHandeler.js" type="module"></script>
+</body>
+</html>
